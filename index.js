@@ -42,7 +42,8 @@ app.get("/userCall/:state", async (req, resp)=>{
 app.get("/arduinoCall", async(req, resp)=>{
     const userState = await userDB.findOne();
     const isDryingInProgress = userState.DryingInProgress;
+    const reply = {isDryingInProgress};
 
     resp.header("Access-Control-Allow-Origin", "*");
-    resp.status(200).send(isDryingInProgress);
+    resp.status(200).send(reply);
 })
