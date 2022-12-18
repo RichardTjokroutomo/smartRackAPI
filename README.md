@@ -8,8 +8,8 @@ to Eastest:
   1) /userCall/:state
   2) /arduinoCall
 
-- you will be working on the /arduinoCall path. Here are some details:
-  1) the root URL is https://smartrackapi.adaptable.app
+- you will be working with the /arduinoCall path. Here are some details:
+  1) the root URL is https://smartrackapi.adaptable.app (if you want to call the API on your browser, use https://smartrackapi.adaptable.app/arduinoCall)
   2) listen on port 80
   3) request method is GET
   4) path is /arduinoCall
@@ -21,5 +21,5 @@ to Eastest:
 
 - program the arduino to periodically make HTTP request to the server to ask for the STATE.
 
-- how's 8051? :)
+- how's 8051? You love retro eh? :)
 
