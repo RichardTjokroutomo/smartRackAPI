@@ -34,7 +34,7 @@ app.get("/userCall/:state", async (req, resp)=>{
     const newUserState = await userDB.findOne();
     console.log(newUserState);
     resp.header("Access-Control-Allow-Origin", "*");
-    resp.status(200).send("db modified! got it!");
+    resp.status(200).send({message : "db modified! got it!"});
 });
 
 
