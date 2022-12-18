@@ -14,7 +14,7 @@ to Eastest:
   3) request method is GET
   4) path is /arduinoCall
 
-- the server will respond with:
+- the server will give the following response in JSON format:
   {"isDryingInProgress": STATE}
 
 - STATE is either true or false. If true, program the arduino to extend the clothes rack (because the user told the web app to start drying the clothes). If false,   then program the arduino to retract the clothes rack.
